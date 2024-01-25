@@ -1,4 +1,3 @@
-let topResult = document.querySelector(".top_result")
 let result = document.querySelector(".result")
 
 let ac = document.querySelector(".ac")
