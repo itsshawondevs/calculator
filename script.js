@@ -2,8 +2,8 @@ let result = document.querySelector(".result")
 
 let ac = document.querySelector(".ac")
 let del = document.querySelector(".del")
-let doubleJiro = document.querySelector(".double_jiro")
-let parcent = document.querySelector(".parcent")
+let openBr = document.querySelector(".open_br")
+let closeBr = document.querySelector(".close_br")
 
 let one = document.querySelector(".one")
 let two = document.querySelector(".two")
@@ -68,11 +68,11 @@ into.addEventListener("click",function(){
 divided.addEventListener("click",function(){
     result.innerHTML += `/`
 })
-doubleJiro.addEventListener("click",function(){
-    result.innerHTML += `00`
+openBr.addEventListener("click",function(){
+    result.innerHTML += `(`
 })
-parcent.addEventListener("click",function(){
-    result.innerHTML += `%`
+closeBr.addEventListener("click",function(){
+    result.innerHTML += `)`
 })
 ac.addEventListener("click",function(){
     result.innerHTML = ""
@@ -83,4 +83,3 @@ del.addEventListener("click",function(){
 equal.addEventListener("click",function(){
     result.innerHTML = eval(result.innerHTML)
 })
-
